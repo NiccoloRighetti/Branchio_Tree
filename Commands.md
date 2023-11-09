@@ -18,3 +18,35 @@ for i in /home/STUDENTI/niccolo.righetti/Branchio_2.0/08_node_calibration/data/b
   iqtree2 -t /home/STUDENTI/niccolo.righetti/Branchio_2.0/08_node_calibration/iqtree_na/iqtree_fna.treefile --gcf "$gene_name".treefile --prefix ./"$gene_name".concord
 done
 ```
+Bash script to extract n° of nodes supported by each gene tree:
+```
+#!/bin/bash
+
+# Initialize an associative array to store the totals for each ID
+declare -A id_totals
+
+# Loop through the files matching the pattern
+for file in *.top30.fna.trim.concord.cf.stat; do
+    # Extract the ID from the filename
+    id="${file%%.top30.fna.trim.concord.cf.stat}"
+
+    # Use awk to calculate the total for the third column
+    total=$(awk '{if ($3 == "1" || $3 == "0") sum += $3} END {print sum}' "$file")
+
+    # Store the total in the associative array
+    id_totals["$id"]=$total
+done
+
+# Create a temporary file for sorting
+tempfile=$(mktemp)
+for id in "${!id_totals[@]}"; do
+    echo -e "$id\t${id_totals[$id]}" >> "$tempfile"
+done
+
+# Sort the temporary file based on the second column
+sort -k2,2nr "$tempfile" > sorted_table.txt
+
+# Clean up the temporary file
+rm "$tempfile"
+ 
+```
