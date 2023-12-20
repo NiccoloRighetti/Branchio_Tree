@@ -24,7 +24,7 @@ for path in file_list:
 	pruned_tree= OG + "_cladogram.nwk"
 	with open(path, "r") as iqtree:
 		content=iqtree.read()
-		pattern=r"[A-Z][a-z]{4}"
+		pattern=r"[A-Z].{3}"
 		leaves=re.findall(pattern, content)
 	to_prune_cladogram.prune(leaves)
 	to_prune_cladogram.write(format=9,outfile=pruned_tree)
