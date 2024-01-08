@@ -9,5 +9,7 @@ for i in *_cladogram.nwk; do
   # Genetree constrained
   iqtree2 -s "$seq_path" -g "$i" --prefix ./"$seq_id"_constr
   # Topology test gene by gene
-  cat "$albero_senza_constraint" "$seq_id"_constr.treefile
-  # topology test
+  cat "$seq_id".treefile "$seq_id"_constr.treefile > "$seq_id".treels
+  
+  iqtree2 -s "$seq_path" -z "$seq_id".treels 
+done
