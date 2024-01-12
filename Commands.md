@@ -63,6 +63,7 @@ Calibrations numeric coding:
 4 --> SN(4.05,0.02,50)
 ```
 To launch mcmctree inside Jackknife subfolders:
+```
 #!/bin/bash
 
 # Loop through the No folders
@@ -83,3 +84,5 @@ for i in {1..4}; do
         cd - || exit
     done
 done
+```
+Jackknife analyses running in jk screen session.
