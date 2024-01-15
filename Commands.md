@@ -57,10 +57,10 @@ rm "$tempfile"
 For the moment I do the jackknife sensitivity test of clock 2 (Independent rates).
 Calibrations numeric coding:
 ```
-1 --> SN(1.2571,0.02,50)
-2 --> SN(1.218,0.02,50)
-3 --> SN(1.731,0.0176,50)
-4 --> SN(4.05,0.02,50)
+1 --> SN(1.2571,0.02,50) --> Anostraca crown group
+2 --> SN(1.218,0.02,50) --> Notostraca crown group
+3 --> SN(1.731,0.0176,50) --> Cladocera crown group
+4 --> SN(4.05,0.02,50) --> Branchiopoda crown group
 ```
 To launch mcmctree inside Jackknife subfolders:
 ```
