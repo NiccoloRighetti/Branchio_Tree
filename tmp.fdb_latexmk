@@ -1,0 +1,18 @@
+# Fdb version 4
+["pdflatex"] 1705696968.8726 "z:/Ricerca/Branchio_New_Analyses/tmp.tex" "tmp.pdf" "tmp" 1705696969.47566 0
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1705687243 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/report.cls" 1705689263 23203 f5d913095ece2233436f0e628619cd37 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo" 1705689263 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1705689239 30006 57b07afb710ee2f649c65cfbafda39c1 ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1705687147 41009 84b61f42d16d06bedb915f57aa2374cf ""
+  "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1705691775 5035139 e8cdab388a5f122f6094769190400852 ""
+  "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1705691945 8218814 ed61893a44b26366f642ada8d3300894 ""
+  "c:/texlive/2023/texmf.cnf" 1705691758 713 e69b156964470283e0530f5060668171 ""
+  "tmp.aux" 1705696969 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "tmp.tex" 1705696967 137 d12225a295d253996eb9d1d1dd9ec1f4 ""
+  "z:/Ricerca/Branchio_New_Analyses/tmp.tex" 1705696967 137 d12225a295d253996eb9d1d1dd9ec1f4 ""
+  (generated)
+  "tmp.aux"
+  "tmp.log"
+  "tmp.pdf"
+  (rewritten before read)
