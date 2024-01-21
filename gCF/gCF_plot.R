@@ -16,6 +16,8 @@ outgroup_taxa <- c("Scur", "Iele")
 tree_rooted <- root(tree, outgroup_taxa)
 
 # Create the plot using the 'ape' package
+pdf("gCF_allspecies.tree.pdf")
+
 plot(tree_rooted, show.tip.label = TRUE, cex = 0.6)
 
 # Add node labels near each node
@@ -29,7 +31,6 @@ nodelabels(
 )
 
 # Save the plot as a PNG file
-png("gCF_allspecies.tree.png", width = 800, height = 600, units = "px", res = 300)
 dev.off()
 
 
@@ -49,6 +50,7 @@ outgroup_taxa <- c("Scur", "Iele")
 tree_rooted <- root(tree, outgroup_taxa)
 
 # Create the plot using the 'ape' package
+pdf("gCF_nolysp.tree.pdf")
 plot(tree_rooted, show.tip.label = TRUE, cex = 0.6)
 
 # Add node labels near each node
@@ -62,7 +64,6 @@ nodelabels(
 )
 
 # Save the plot as a PNG file
-png("gCF_nolysp.tree.png", width = 800, height = 600, units = "px", res = 300)
 dev.off()
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  19 JAN 2024 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.19)  21 JAN 2024 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,16 +800,40 @@ LaTeX Warning: Text page 3 contains only floats.
 \openout2 = `Fatto_dopo_la_laurea.aux'.
 
  (./Fatto_dopo_la_laurea.tex
-<Figures/Jackknife_scatterplot.png, id=44, 3328.7562pt x 2361.5427pt>
+<Figures/Jackknife_scatterplot.png, id=44, 845.40843pt x 599.99156pt>
 File: Figures/Jackknife_scatterplot.png Graphic file (type png)
 <use Figures/Jackknife_scatterplot.png>
 Package pdftex.def Info: Figures/Jackknife_scatterplot.png  used on input line 7.
-(pdftex.def)             Requested size: 469.75502pt x 333.24422pt.
-) [7
+(pdftex.def)             Requested size: 469.75502pt x 333.38377pt.
+ [7
 
 
 
- <./Figures/Jackknife_scatterplot.png (PNG copy)>] (./0_main.aux (./Fatto_in_tesi.aux) (./Fatto_dopo_la_laurea.aux))
+ <./Figures/Jackknife_scatterplot.png>]
+<Figures/gCF_allspecies.tree.png, id=49, 386.19281pt x 350.81062pt>
+File: Figures/gCF_allspecies.tree.png Graphic file (type png)
+<use Figures/gCF_allspecies.tree.png>
+Package pdftex.def Info: Figures/gCF_allspecies.tree.png  used on input line 19.
+(pdftex.def)             Requested size: 469.75502pt x 426.71968pt.
+ [8 <./Figures/gCF_allspecies.tree.png>]
+<Figures/gCF_nolysp.tree.png, id=54, 386.19281pt x 350.81062pt>
+File: Figures/gCF_nolysp.tree.png Graphic file (type png)
+<use Figures/gCF_nolysp.tree.png>
+Package pdftex.def Info: Figures/gCF_nolysp.tree.png  used on input line 30.
+(pdftex.def)             Requested size: 469.75502pt x 426.71968pt.
+ [9 <./Figures/gCF_nolysp.tree.png>]
+<Figures/gCF.png, id=59, 834.86906pt x 586.44093pt>
+File: Figures/gCF.png Graphic file (type png)
+<use Figures/gCF.png>
+Package pdftex.def Info: Figures/gCF.png  used on input line 41.
+(pdftex.def)             Requested size: 469.75502pt x 329.97958pt.
+ [10 <./Figures/gCF.png>]
+<Figures/All_Conc_Disc_scatterplot.png, id=64, 845.40843pt x 599.99156pt>
+File: Figures/All_Conc_Disc_scatterplot.png Graphic file (type png)
+<use Figures/All_Conc_Disc_scatterplot.png>
+Package pdftex.def Info: Figures/All_Conc_Disc_scatterplot.png  used on input line 61.
+(pdftex.def)             Requested size: 469.75502pt x 333.38377pt.
+ [11{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figures/All_Conc_Disc_scatterplot.png>]) [12] (./0_main.aux (./Fatto_in_tesi.aux) (./Fatto_dopo_la_laurea.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -823,18 +847,18 @@ Package logreq Info: Writing requests to '0_main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17324 strings out of 474165
- 364255 string characters out of 5749497
- 1928542 words of memory out of 5000000
- 39441 multiletter control sequences out of 15000+600000
- 560492 words of font info for 44 fonts, out of 8000000 for 9000
+ 17363 strings out of 474165
+ 365423 string characters out of 5749497
+ 1929542 words of memory out of 5000000
+ 39478 multiletter control sequences out of 15000+600000
+ 560827 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,6n,107p,731b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on 0_main.pdf (8 pages, 2788051 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on 0_main.pdf (13 pages, 1809002 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
