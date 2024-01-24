@@ -30,7 +30,7 @@ disc.tree <- readMCMCtree(disc.tree, from.file = FALSE)
 
 dates <- as.data.frame(cbind(conc.tree$nodeAges[,1],disc.tree$nodeAges[,1],all.tree$nodeAges[,1]))
 colnames(dates) <- c("mean_conc","mean_disc","mean_all")
-library(ggplot2)
+
 plot1 <- ggplot(dates,aes(x=mean_conc*100, y=mean_disc*100)) +
   geom_point() +
   ggtitle("Concordance Dataset vs Discordance Dataset") +
