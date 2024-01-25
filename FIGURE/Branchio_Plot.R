@@ -200,7 +200,7 @@ dev.off()
 # Needed datasets
 
 all.tree.CI <- all.tree$nodeAges[,3] - all.tree$nodeAges[,2]
-all.tree.CI <- cbind(all.tree.CI,rep("all",length(all.tree.CI)))
+all.tree.CI <- cbind(all.tree.CI,rep("All calibration/genes/species",length(all.tree.CI)))
 all.tree.CI <- all.tree.CI[-2,]
 
 no1.tree.CI <- no1.tree$nodeAges[,3] - no1.tree$nodeAges[,2]
@@ -234,14 +234,17 @@ disc.tree.CI <- disc.tree.CI[-2,]
 remove(CI_data)
 CI <- as.vector(as.numeric(c(all.tree.CI[,1],no1.tree.CI[,1],no2.tree.CI[,1],no3.tree.CI[,1],no4.tree.CI[,1],nolysp.tree.CI[,1],conc.tree.CI[,1],disc.tree.CI[,1])))
 Dataset <- as.vector(as.factor(c(all.tree.CI[,2],no1.tree.CI[,2],no2.tree.CI[,2],no3.tree.CI[,2],no4.tree.CI[,2],nolysp.tree.CI[,2],conc.tree.CI[,2],disc.tree.CI[,2])))
-CI_data <- data.frame(CI = CI, Dataset = Dataset)
+CI_data <- data.frame(CI = CI, Dataset = Dataset, CI100 = CI*100)
+CI_data$CI100 <- CI_data$CI*100
 
 pastel_palette <- c("#FFB6C1", "#FFD700", "#98FB98", "#ADD8E6", "#FFA07A", "#D8BFD8", "#87CEEB", "#F0E68C")
 
 pdf("./Confidence_Intervals_Ridgeplot.pdf", width = 11.69, height = 8.27)
-ggplot(CI_data, aes(x = CI, y = Dataset, fill = Dataset)) +
+ggplot(CI_data, aes(x = CI100, y = Dataset, fill = Dataset)) +
   geom_density_ridges() +
   theme_ridges() + 
-  theme(legend.position = "none") +
-  scale_fill_manual(values = pastel_palette)
+  theme(legend.position = "none", axis.title.x = element_text(hjust = 0.5)) +
+  scale_fill_manual(values = pastel_palette) +
+  labs(x = "Confidence Intervals of Date Estimates (My)",y="")
 dev.off()
+
