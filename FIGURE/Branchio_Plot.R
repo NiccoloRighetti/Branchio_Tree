@@ -57,14 +57,6 @@ pdf("./fossils_occurences.pdf", width = 11.7, height = 8.3)
 plot_multi
 dev.off()
 
-iln_tree <- png::readPNG("../../../../../Dropbox/Tesi_magistrale/Alberi/mcmctree_iln_2.0.png")
-iln_tree.png<- ggdraw() + draw_image(iln_tree, scale = 0.8)
-
-
-
-
-plot_grid(iln_tree.png,plot_multi,ncol = 1)
-plot_grid(iln_tree.png,plot_multi, align = "v", nrow = 2, rel_heights = c(1, 1/2))
 
 
 
@@ -198,4 +190,58 @@ dev.off()
 
 pdf("./Figure2_horizontal.pdf", width = 11.69, height = 8.27)
 plot_grid(plot1,plot2,plot5,plot3,plot4,plot6,labels =c ("A","","B","","","C"),ncol=3)
+dev.off()
+
+
+
+
+
+# RIDGEPLOT OF CONFIDENCE INTERVALS IN EACH DATASET
+# Needed datasets
+
+all.tree.CI <- all.tree$nodeAges[,3] - all.tree$nodeAges[,2]
+all.tree.CI <- cbind(all.tree.CI,rep("all",length(all.tree.CI)))
+all.tree.CI <- all.tree.CI[-2,]
+
+no1.tree.CI <- no1.tree$nodeAges[,3] - no1.tree$nodeAges[,2]
+no1.tree.CI <- cbind(no1.tree.CI,rep("No Anostraca calibration",length(no1.tree.CI)))
+no1.tree.CI <- no1.tree.CI[-2,]
+
+no2.tree.CI <- no2.tree$nodeAges[,3] - no2.tree$nodeAges[,2]
+no2.tree.CI <- cbind(no2.tree.CI,rep("No Notostraca calibration",length(no2.tree.CI)))
+no2.tree.CI <- no2.tree.CI[-2,]
+
+no3.tree.CI <- no3.tree$nodeAges[,3] - no3.tree$nodeages[,2]
+no3.tree.CI <- cbind(no3.tree.CI,rep("No Cladocera calibration",length(no3.tree.CI)))
+no3.tree.CI <- no3.tree.CI[-2,]
+
+no4.tree.CI <- no4.tree$nodeAges[,3] - no4.tree$nodeAges[,2]
+no4.tree.CI <- cbind(no4.tree.CI,rep("No Branchiopoda calibration",length(no4.tree.CI)))
+no4.tree.CI <- no4.tree.CI[-2,]
+
+nolysp.tree.CI <- nolysp.tree$nodeAges[,3] - nolysp.tree$nodeAges[,2]
+nolysp.tree.CI <- cbind(nolysp.tree.CI,rep("Wihout Lynceus sp.",length(nolysp.tree.CI)))
+nolysp.tree.CI <- nolysp.tree.CI[-2,]
+
+conc.tree.CI <- conc.tree$nodeAges[,3] - conc.tree$nodeAges[,2]
+conc.tree.CI <- cbind(conc.tree.CI,rep("Concordant genes",length(conc.tree.CI)))
+conc.tree.CI <- conc.tree.CI[-2,]
+
+disc.tree.CI <- disc.tree$nodeAges[,3] - disc.tree$nodeAges[,2]
+disc.tree.CI <- cbind(disc.tree.CI,rep("Discordant genes",length(disc.tree.CI)))
+disc.tree.CI <- disc.tree.CI[-2,]
+
+remove(CI_data)
+CI <- as.vector(as.numeric(c(all.tree.CI[,1],no1.tree.CI[,1],no2.tree.CI[,1],no3.tree.CI[,1],no4.tree.CI[,1],nolysp.tree.CI[,1],conc.tree.CI[,1],disc.tree.CI[,1])))
+Dataset <- as.vector(as.factor(c(all.tree.CI[,2],no1.tree.CI[,2],no2.tree.CI[,2],no3.tree.CI[,2],no4.tree.CI[,2],nolysp.tree.CI[,2],conc.tree.CI[,2],disc.tree.CI[,2])))
+CI_data <- data.frame(CI = CI, Dataset = Dataset)
+
+pastel_palette <- c("#FFB6C1", "#FFD700", "#98FB98", "#ADD8E6", "#FFA07A", "#D8BFD8", "#87CEEB", "#F0E68C")
+
+pdf("./Confidence_Intervals_Ridgeplot.pdf", width = 11.69, height = 8.27)
+ggplot(CI_data, aes(x = CI, y = Dataset, fill = Dataset)) +
+  geom_density_ridges() +
+  theme_ridges() + 
+  theme(legend.position = "none") +
+  scale_fill_manual(values = pastel_palette)
 dev.off()
