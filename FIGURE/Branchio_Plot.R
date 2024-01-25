@@ -12,6 +12,8 @@ library(devtools)
 library(ggradar)
 library(cowplot)
 library(dplyr)
+library(magick)
+library(grImport2)
 cat("All required packages have been successfully loaded.\n")
 
 #FIGURA 1
@@ -34,13 +36,14 @@ colnames(anostraca_occ)[1]<-"Group"
 
 
 fossils<-rbind(branchiopoda_occ,cladocera_occ,notostraca_occ,anostraca_occ)
+fossils_nobranchio<-rbind(cladocera_occ,notostraca_occ,anostraca_occ)
 
 
 my_colors <- c("#008080", "#B87333","#FF6347","#DAA520")
 
 
 plot_multi <- ggplot(fossils, aes(x = max_ma, fill = Group)) +
-  geom_histogram(adjust = 1.5, position = "identity", bins = 50) +
+  geom_histogram(adjust = 1.5, position = "stack", bins = 50) +
   theme_bw() +
   scale_fill_manual(values = my_colors) +
   scale_x_reverse() +
@@ -54,13 +57,14 @@ pdf("./fossils_occurences.pdf", width = 11.7, height = 8.3)
 plot_multi
 dev.off()
 
+iln_tree <- png::readPNG("../../../../../Dropbox/Tesi_magistrale/Alberi/mcmctree_iln_2.0.png")
+iln_tree.png<- ggdraw() + draw_image(iln_tree, scale = 0.8)
 
 
 
 
-
-
-
+plot_grid(iln_tree.png,plot_multi,ncol = 1)
+plot_grid(iln_tree.png,plot_multi, align = "v", nrow = 2, rel_heights = c(1, 1/2))
 
 
 
@@ -192,13 +196,6 @@ plot_grid(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2, labels = "AUTO")
 dev.off()
 
 
-
-right_col <- plot_grid(plot5, plot6, ncol = 1, labels = c("B","C"))
-left_col <- plot_grid(plot1,plot2,plot3,plot4, ncol = 2)
-
-widths = c(2,1)
-plot_grid(left_col, right_col,  widths = widths, labels = c('A', ''), label_size = 12, ncol = 2)
-
 pdf("./Figure2_horizontal.pdf", width = 11.69, height = 8.27)
-plot_grid(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 3, labels = "AUTO")
+plot_grid(plot1,plot2,plot5,plot3,plot4,plot6,labels =c ("A","","B","","","C"),ncol=3)
 dev.off()
