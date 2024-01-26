@@ -1,60 +1,120 @@
 # BRANCHIO PLOTTING
 # Needed packages
-library(MCMCtreeR, quietly = TRUE, warn.conflicts = FALSE)
-library(readr)
-library(ape)
-library(scales)
-library(ggplot2)
-library(tm)
-library(gridExtra)
-library(fmsb)
-library(devtools)
-library(ggradar)
-library(cowplot)
-library(dplyr)
-library(magick)
-library(grImport2)
+suppressWarnings({
+  library(MCMCtreeR, quietly = TRUE, warn.conflicts = FALSE)
+  library(readr)
+  library(ape)
+  library(scales)
+  library(ggplot2)
+  library(tm)
+  library(gridExtra)
+  library(fmsb)
+  library(devtools)
+  library(ggradar)
+  library(cowplot)
+  library(dplyr)
+  library(magick)
+  library(grImport2)
+  library(ggridges)
+})
+
 cat("All required packages have been successfully loaded.\n")
 
+
 #FIGURA 1
-branchiopoda_occ<-read.table("./branchiopoda_occ.txt", sep=",", header = T)
-branchiopoda_occ<-cbind(rep("Branchiopoda",length(branchiopoda_occ[1])),branchiopoda_occ)
-colnames(branchiopoda_occ)[1]<-"Group"
+branchiopoda_occ <- read.table("./branchiopoda_occ.txt", sep=",", header = T)
+branchiopoda_occ <- cbind(rep("Branchiopoda",length(branchiopoda_occ[1])),branchiopoda_occ)
+colnames(branchiopoda_occ)[1] <- "Group"
 
-cladocera_occ<-read.table("./cladocera_occ.txt", sep=",", header = T)
-cladocera_occ<-cbind(rep("Cladocera",length(cladocera_occ[1])),cladocera_occ)
-colnames(cladocera_occ)[1]<-"Group"
-
-notostraca_occ<-read.table("./notostraca_occ.txt", sep=",", header = T)
-notostraca_occ<-cbind(rep("Notostraca",length(notostraca_occ[1])),notostraca_occ)
-colnames(notostraca_occ)[1]<-"Group"
-
-anostraca_occ<-read.table("./anostraca_occ.txt", sep=",", header = T)
-anostraca_occ<-cbind(rep("Anostraca",length(anostraca_occ[1])),anostraca_occ)
-colnames(anostraca_occ)[1]<-"Group"
-
-
-
-fossils<-rbind(branchiopoda_occ,cladocera_occ,notostraca_occ,anostraca_occ)
-fossils_nobranchio<-rbind(cladocera_occ,notostraca_occ,anostraca_occ)
-
-
-my_colors <- c("#008080", "#B87333","#FF6347","#DAA520")
-
-
-plot_multi <- ggplot(fossils, aes(x = max_ma, fill = Group)) +
-  geom_histogram(adjust = 1.5, position = "stack", bins = 50) +
+mean_value_crown <- 406.5917
+min_value_crown <- 405.06000
+max_value_crown <- 409.4840
+mean_value_stem <- 495.8419
+min_value_stem <- 473.972
+max_value_stem <- 528.311
+plot_branchio <- ggplot(branchiopoda_occ, aes(x = max_ma, fill = Group)) +
+  ggplot2::annotate(geom = "rect", xmin = 405.06, xmax = 409.4840, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  ggplot2::annotate(geom = "rect", xmin = 473.972, xmax = 528.311, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  geom_histogram(position = "stack", bins = 50,fill="#B87333",color="white") +
   theme_bw() +
-  scale_fill_manual(values = my_colors) +
   scale_x_reverse() +
-  xlim(520, 0) +
-  facet_wrap(~Group, scales = "free_y", ncol = 1) +  # Use 'facet_wrap' for grouping
-  theme(strip.background = element_blank(),  # Remove background color for facet titles
-        legend.position = "none")  # Remove the legend
+  xlim(550, 0) +
+  facet_wrap(~Group, scales = "free_y", ncol = 1) + 
+  theme(strip.background = element_blank(), legend.position = "none")
+
+cladocera_occ <- read.table("./cladocera_occ.txt", sep=",", header = T)
+cladocera_occ <- cbind(rep("Cladocera",length(cladocera_occ[1])),cladocera_occ)
+colnames(cladocera_occ)[1] <- "Group"
+
+mean_value_crown <- 174.5135
+min_value_crown <-  173.15200
+max_value_crown <- 177.0820
+mean_value_stem <- 195.7127
+min_value_stem <- 183.13900
+max_value_stem <- 222.7480
+plot_clado <- ggplot(cladocera_occ, aes(x = max_ma, fill = Group)) +
+  ggplot2::annotate(geom = "rect",xmin = 173.15200, xmax = 177.0820, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  ggplot2::annotate(geom = "rect",xmin = 183.13900, xmax = 222.7480, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  geom_histogram(position = "stack", bins = 50,fill="#FF6347",color="white") +
+  theme_bw() +
+  scale_x_reverse() +
+  xlim(550, 0) +
+  facet_wrap(~Group, scales = "free_y", ncol = 1) + 
+  theme(strip.background = element_blank(), legend.position = "none")
+dev.off()
+notostraca_occ <- read.table("./notostraca_occ.txt", sep=",", header = T)
+notostraca_occ <- cbind(rep("Notostraca",length(notostraca_occ[1])),notostraca_occ)
+colnames(notostraca_occ)[1] <- "Group"
+
+mean_value_crown <- 123.5135
+min_value_crown <-  121.87200
+max_value_crown <- 126.5260
+mean_value_stem <- 322.2284
+min_value_stem <- 252.25600
+max_value_stem <- 376.6370
+plot_noto <- ggplot(notostraca_occ, aes(x = max_ma, fill = Group)) +
+  ggplot2::annotate(geom = "rect",xmin = 121.87200, xmax = 126.5260, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  ggplot2::annotate(geom = "rect", xmin = 252.25600, xmax = 376.6370, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  geom_histogram(position = "stack", bins = 50,fill="#DAA520",color="white") +
+  theme_bw() +
+  scale_x_reverse() +
+  xlim(550, 0) +
+  facet_wrap(~Group, scales = "free_y", ncol = 1) + 
+  theme(strip.background = element_blank(), legend.position = "none")
+
+anostraca_occ <- read.table("./anostraca_occ.txt", sep=",", header = T)
+anostraca_occ <- cbind(rep("Anostraca",length(anostraca_occ[1])),anostraca_occ)
+colnames(anostraca_occ)[1] <- "Group"
+
+mean_value_crown <- 127.3788
+min_value_crown <-  125.78200
+max_value_crown <- 130.3390
+mean_value_stem <- 406.5917
+min_value_stem <- 405.06000
+max_value_stem <- 409.4840
+plot_anos <- ggplot(anostraca_occ, aes(x = max_ma, fill = Group)) +
+  ggplot2::annotate(geom = "rect", xmin = 125.78200, xmax = 130.3390, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  ggplot2::annotate(geom = "rect", xmin = 405.06000, xmax = 409.4840, ymin = 0, ymax = Inf,
+            fill = "grey68", alpha = 0.5) +
+  geom_histogram(position = "stack", bins = 50,fill="#008080",color="white") +
+  theme_bw() +
+  scale_x_reverse() +
+  xlim(550, 0) +
+  facet_wrap(~Group, scales = "free_y", ncol = 1) + 
+  theme(strip.background = element_blank(), legend.position = "none")
+
+
 
 
 pdf("./fossils_occurences.pdf", width = 11.7, height = 8.3)
-plot_multi
+plot_grid(plot_branchio,plot_anos,plot_noto,plot_clado,ncol=1)
 dev.off()
 
 
