@@ -3,7 +3,7 @@ Link to draft: https://docs.google.com/document/d/19AKof67GY6q8u5w4MD3-ypnTLOA0-
 
 Figure 1:
 
-![image text](FIGURE/Figure1.png)
+![image text](FIGURE/Figure1_white_bg.png)
 
 Figure 2:
 
