@@ -16,6 +16,8 @@ suppressWarnings({
   library(magick)
   library(grImport2)
   library(ggridges)
+  library(viridis)
+  library(forcats)
 })
 
 cat("All required packages have been successfully loaded.\n")
@@ -65,7 +67,7 @@ plot_clado <- ggplot(cladocera_occ, aes(x = max_ma, fill = Group)) +
   xlim(550, 0) +
   facet_wrap(~Group, scales = "free_y", ncol = 1) + 
   theme(strip.background = element_blank(), legend.position = "none")
-dev.off()
+
 notostraca_occ <- read.table("./notostraca_occ.txt", sep=",", header = T)
 notostraca_occ <- cbind(rep("Notostraca",length(notostraca_occ[1])),notostraca_occ)
 colnames(notostraca_occ)[1] <- "Group"
@@ -110,14 +112,70 @@ plot_anos <- ggplot(anostraca_occ, aes(x = max_ma, fill = Group)) +
   facet_wrap(~Group, scales = "free_y", ncol = 1) + 
   theme(strip.background = element_blank(), legend.position = "none")
 
+anostraca_2_occ <- read.table("./anostraca_occ.txt", sep=",", header = T)
+anostraca_2_occ <- cbind(rep("Branchiopoda",length(anostraca_2_occ[1])),anostraca_2_occ)
+colnames(anostraca_2_occ)[1] <- "Group"
+branchio_anos_occ <- rbind(branchiopoda_occ,anostraca_2_occ)
 
+
+plot_branchio_anos <- ggplot(branchio_anos_occ, aes(x = max_ma)) +
+  ggplot2::annotate(geom = "rect", xmin = 125.78200, xmax = 130.3390, ymin = 0, ymax = Inf,
+                    fill = "grey68", alpha = 0.5) +
+  ggplot2::annotate(geom = "rect", xmin = 405.06000, xmax = 409.4840, ymin = 0, ymax = Inf,
+                    fill = "grey68", alpha = 0.5) +
+  geom_histogram(position = "stack", bins = 50,fill="#B87333",color="white") +
+  theme_bw() +
+  scale_x_reverse() +
+  xlim(550, 0) +
+  facet_wrap(~Group, scales = "free_y", ncol = 1) + 
+  theme(strip.background = element_blank(), legend.position = "none")
 
 
 pdf("./fossils_occurences.pdf", width = 11.7, height = 8.3)
-plot_grid(plot_branchio,plot_anos,plot_noto,plot_clado,ncol=1)
+plot_grid(plot_branchio_anos,plot_anos,plot_noto,plot_clado,ncol=1)
 dev.off()
 
 
+complete_dataset <- rbind(branchio_anos_occ,anostraca_occ,notostraca_occ,cladocera_occ)
+
+complete_dataset$Ma_Bin <- cut(complete_dataset$max_ma, breaks = seq(0, max(complete_dataset$max_ma) + 50, by = 50), labels = FALSE)
+
+count_df <- complete_dataset %>%
+  group_by(Group, Ma_Bin) %>%
+  summarize(Count = n())
+
+count_df$Ma_Bin <- paste0((as.numeric(count_df$Ma_Bin) - 1) * 50, "-", as.numeric(count_df$Ma_Bin) * 50, "Ma")
+
+count_df <- count_df[order(count_df$Group, count_df$Ma_Bin),]
+
+count_df <- as.data.frame(count_df)
+
+
+order_vector <- c("0-50Ma", "50-100Ma", "100-150Ma", "150-200Ma", "200-250Ma", "250-300Ma", 
+                  "300-350Ma", "350-400Ma", "400-450Ma", "450-500Ma", "500-550Ma")
+order_vector <- rev(order_vector)
+
+count_df$Ma_Bin <- factor(count_df$Ma_Bin, levels = order_vector)
+
+desired_order <- c("Cladocera", "Notostraca", "Anostraca", "Branchiopoda")
+
+plot_fossils_circle <- ggplot(count_df, aes(x = Ma_Bin, y = fct_inorder(Group), color = Count, size = Count)) +
+  geom_point() +
+  scale_colour_viridis_c(name = "Count") +
+  scale_size_continuous(range = c(1, 25), name = "Count") +
+  theme(legend.position = "bottom") +
+  guides(color = guide_legend(), size = guide_legend()) +
+  theme_bw() +
+  labs(x = "", y = "")
+
+# Order the levels of the 'Group' variable according to 'desired_order'
+plot_fossils_circle <- plot_fossils_circle + 
+  scale_y_discrete(limits = desired_order)
+
+
+pdf("./fossils_occurences_circles.pdf", width = 11.7, height = 5.3)
+plot_fossils_circle
+dev.off()
 
 
 
