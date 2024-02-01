@@ -302,8 +302,9 @@ plot6 <- ggplot(dates_concdisc,aes(x=mean_conc*100, y=mean_disc*100)) +
 
 
 pdf("./Figure2.pdf", width = 8.27, height = 11.69)
-plot_grid(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2, labels = "AUTO")
+plot_grid(plot1, plot2, plot3, plot4, plot5, plot6, ncol = 2, labels = c("A", "", "", "","B","C"))
 dev.off()
+
 
 
 pdf("./Figure2_horizontal.pdf", width = 11.69, height = 8.27)
@@ -329,7 +330,7 @@ no2.tree.CI <- no2.tree$nodeAges[,3] - no2.tree$nodeAges[,2]
 no2.tree.CI <- cbind(no2.tree.CI,rep("No Notostraca calibration",length(no2.tree.CI)))
 no2.tree.CI <- no2.tree.CI[-2,]
 
-no3.tree.CI <- no3.tree$nodeAges[,3] - no3.tree$nodeages[,2]
+no3.tree.CI <- no3.tree$nodeAges[,3] - no3.tree$nodeAges[,2]
 no3.tree.CI <- cbind(no3.tree.CI,rep("No Cladocera calibration",length(no3.tree.CI)))
 no3.tree.CI <- no3.tree.CI[-2,]
 
@@ -366,3 +367,7 @@ ggplot(CI_data, aes(x = CI100, y = Dataset, fill = Dataset)) +
   labs(x = "Confidence Intervals of Date Estimates (My)",y="")
 dev.off()
 
+# To check whether there is a "Group" (in our case prior/dataset) effect on the distribution
+# of the confidence intervals sizes
+shapiro.test(CI_data$CI100)
+kruskal.test(CI_data$CI100,CI_data$Dataset)
