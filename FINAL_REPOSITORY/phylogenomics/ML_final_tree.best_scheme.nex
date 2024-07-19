@@ -1,0 +1,272 @@
+#nexus
+begin sets;
+  charset 101886at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/101886at6656_aligned_trim.faa: ;
+  charset 102770at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/102770at6656_aligned_trim.faa: ;
+  charset 104063at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/104063at6656_aligned_trim.faa: ;
+  charset 104198at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/104198at6656_aligned_trim.faa: ;
+  charset 104588at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/104588at6656_aligned_trim.faa: ;
+  charset 106639at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/106639at6656_aligned_trim.faa: ;
+  charset 107139at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/107139at6656_aligned_trim.faa: ;
+  charset 107453at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/107453at6656_aligned_trim.faa: ;
+  charset 109325at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/109325at6656_aligned_trim.faa: ;
+  charset 109444at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/109444at6656_aligned_trim.faa: ;
+  charset 109484at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/109484at6656_aligned_trim.faa: ;
+  charset 110129at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/110129at6656_aligned_trim.faa: ;
+  charset 113604at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/113604at6656_aligned_trim.faa: ;
+  charset 113865at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/113865at6656_aligned_trim.faa: ;
+  charset 114463at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/114463at6656_aligned_trim.faa: ;
+  charset 114609at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/114609at6656_aligned_trim.faa: ;
+  charset 115256at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/115256at6656_aligned_trim.faa: ;
+  charset 116401at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/116401at6656_aligned_trim.faa: ;
+  charset 117335at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/117335at6656_aligned_trim.faa: ;
+  charset 117413at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/117413at6656_aligned_trim.faa: ;
+  charset 117811at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/117811at6656_aligned_trim.faa: ;
+  charset 118496at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/118496at6656_aligned_trim.faa: ;
+  charset 118527at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/118527at6656_aligned_trim.faa: ;
+  charset 119144at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/119144at6656_aligned_trim.faa: ;
+  charset 119951at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/119951at6656_aligned_trim.faa: ;
+  charset 123672at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/123672at6656_aligned_trim.faa: ;
+  charset 123790at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/123790at6656_aligned_trim.faa: ;
+  charset 124174at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/124174at6656_aligned_trim.faa: ;
+  charset 124400at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/124400at6656_aligned_trim.faa: ;
+  charset 125210at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/125210at6656_aligned_trim.faa: ;
+  charset 125446at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/125446at6656_aligned_trim.faa: ;
+  charset 127998at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/127998at6656_aligned_trim.faa: ;
+  charset 128216at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/128216at6656_aligned_trim.faa: ;
+  charset 128916at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/128916at6656_aligned_trim.faa: ;
+  charset 129200at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/129200at6656_aligned_trim.faa: ;
+  charset 129593at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/129593at6656_aligned_trim.faa: ;
+  charset 129886at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/129886at6656_aligned_trim.faa: ;
+  charset 130663at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/130663at6656_aligned_trim.faa: ;
+  charset 131751at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/131751at6656_aligned_trim.faa: ;
+  charset 132329at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/132329at6656_aligned_trim.faa: ;
+  charset 132340at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/132340at6656_aligned_trim.faa: ;
+  charset 133362at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/133362at6656_aligned_trim.faa: ;
+  charset 133949at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/133949at6656_aligned_trim.faa: ;
+  charset 134708at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/134708at6656_aligned_trim.faa: ;
+  charset 134853at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/134853at6656_aligned_trim.faa: ;
+  charset 135075at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/135075at6656_aligned_trim.faa: ;
+  charset 135107at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/135107at6656_aligned_trim.faa: ;
+  charset 135391at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/135391at6656_aligned_trim.faa: ;
+  charset 135859at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/135859at6656_aligned_trim.faa: ;
+  charset 136055at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/136055at6656_aligned_trim.faa: ;
+  charset 137334at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/137334at6656_aligned_trim.faa: ;
+  charset 138271at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/138271at6656_aligned_trim.faa: ;
+  charset 138401at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/138401at6656_aligned_trim.faa: ;
+  charset 138553at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/138553at6656_aligned_trim.faa: ;
+  charset 138684at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/138684at6656_aligned_trim.faa: ;
+  charset 139638at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/139638at6656_aligned_trim.faa: ;
+  charset 139744at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/139744at6656_aligned_trim.faa: ;
+  charset 140693at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/140693at6656_aligned_trim.faa: ;
+  charset 140874at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/140874at6656_aligned_trim.faa: ;
+  charset 140903at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/140903at6656_aligned_trim.faa: ;
+  charset 142415at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/142415at6656_aligned_trim.faa: ;
+  charset 142522at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/142522at6656_aligned_trim.faa: ;
+  charset 142613at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/142613at6656_aligned_trim.faa: ;
+  charset 143279at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/143279at6656_aligned_trim.faa: ;
+  charset 143489at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/143489at6656_aligned_trim.faa: ;
+  charset 144836at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/144836at6656_aligned_trim.faa: ;
+  charset 144851at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/144851at6656_aligned_trim.faa: ;
+  charset 145102at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/145102at6656_aligned_trim.faa: ;
+  charset 145610at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/145610at6656_aligned_trim.faa: ;
+  charset 145996at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/145996at6656_aligned_trim.faa: ;
+  charset 146103at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/146103at6656_aligned_trim.faa: ;
+  charset 146383at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/146383at6656_aligned_trim.faa: ;
+  charset 147723at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/147723at6656_aligned_trim.faa: ;
+  charset 148619at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/148619at6656_aligned_trim.faa: ;
+  charset 148890at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/148890at6656_aligned_trim.faa: ;
+  charset 149126at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/149126at6656_aligned_trim.faa: ;
+  charset 149405at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/149405at6656_aligned_trim.faa: ;
+  charset 149819at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/149819at6656_aligned_trim.faa: ;
+  charset 150049at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/150049at6656_aligned_trim.faa: ;
+  charset 150327at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/150327at6656_aligned_trim.faa: ;
+  charset 150585at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/150585at6656_aligned_trim.faa: ;
+  charset 150765at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/150765at6656_aligned_trim.faa: ;
+  charset 151436at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/151436at6656_aligned_trim.faa: ;
+  charset 152032at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/152032at6656_aligned_trim.faa: ;
+  charset 153312at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/153312at6656_aligned_trim.faa: ;
+  charset 154415at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/154415at6656_aligned_trim.faa: ;
+  charset 155285at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/155285at6656_aligned_trim.faa: ;
+  charset 156081at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/156081at6656_aligned_trim.faa: ;
+  charset 156111at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/156111at6656_aligned_trim.faa: ;
+  charset 157486at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/157486at6656_aligned_trim.faa: ;
+  charset 157851at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/157851at6656_aligned_trim.faa: ;
+  charset 159542at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/159542at6656_aligned_trim.faa: ;
+  charset 161435at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/161435at6656_aligned_trim.faa: ;
+  charset 162147at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/162147at6656_aligned_trim.faa: ;
+  charset 162594at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/162594at6656_aligned_trim.faa: ;
+  charset 164354at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/164354at6656_aligned_trim.faa: ;
+  charset 165493at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/165493at6656_aligned_trim.faa: ;
+  charset 22887at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/22887at6656_aligned_trim.faa: ;
+  charset 25554at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/25554at6656_aligned_trim.faa: ;
+  charset 26653at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/26653at6656_aligned_trim.faa: ;
+  charset 30642at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/30642at6656_aligned_trim.faa: ;
+  charset 59393at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/59393at6656_aligned_trim.faa: ;
+  charset 59681at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/59681at6656_aligned_trim.faa: ;
+  charset 60067at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/60067at6656_aligned_trim.faa: ;
+  charset 60299at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/60299at6656_aligned_trim.faa: ;
+  charset 61153at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/61153at6656_aligned_trim.faa: ;
+  charset 65508at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/65508at6656_aligned_trim.faa: ;
+  charset 66299at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/66299at6656_aligned_trim.faa: ;
+  charset 69284at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/69284at6656_aligned_trim.faa: ;
+  charset 69742at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/69742at6656_aligned_trim.faa: ;
+  charset 73084at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/73084at6656_aligned_trim.faa: ;
+  charset 73301at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/73301at6656_aligned_trim.faa: ;
+  charset 74836at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/74836at6656_aligned_trim.faa: ;
+  charset 75982at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/75982at6656_aligned_trim.faa: ;
+  charset 77976at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/77976at6656_aligned_trim.faa: ;
+  charset 81650at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/81650at6656_aligned_trim.faa: ;
+  charset 83303at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/83303at6656_aligned_trim.faa: ;
+  charset 84097at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/84097at6656_aligned_trim.faa: ;
+  charset 84169at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/84169at6656_aligned_trim.faa: ;
+  charset 84422at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/84422at6656_aligned_trim.faa: ;
+  charset 87014at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/87014at6656_aligned_trim.faa: ;
+  charset 87527at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/87527at6656_aligned_trim.faa: ;
+  charset 87728at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/87728at6656_aligned_trim.faa: ;
+  charset 89810at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/89810at6656_aligned_trim.faa: ;
+  charset 90931at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/90931at6656_aligned_trim.faa: ;
+  charset 91002at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/91002at6656_aligned_trim.faa: ;
+  charset 91418at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/91418at6656_aligned_trim.faa: ;
+  charset 93085at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/93085at6656_aligned_trim.faa: ;
+  charset 93432at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/93432at6656_aligned_trim.faa: ;
+  charset 94263at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/94263at6656_aligned_trim.faa: ;
+  charset 94304at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/94304at6656_aligned_trim.faa: ;
+  charset 94878at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/94878at6656_aligned_trim.faa: ;
+  charset 96569at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/96569at6656_aligned_trim.faa: ;
+  charset 96592at6656_aligned_trim.faa = species_tree_CHECK/fasta_files_aligned_trimmed/96592at6656_aligned_trim.faa: ;
+  charpartition mymodels =
+    Q.insect+I+G4: 101886at6656_aligned_trim.faa,
+    Q.insect+I+G4: 102770at6656_aligned_trim.faa,
+    Q.insect+I+G4: 104063at6656_aligned_trim.faa,
+    Q.insect+G4: 104198at6656_aligned_trim.faa,
+    Q.insect+I+G4: 104588at6656_aligned_trim.faa,
+    LG+G4: 106639at6656_aligned_trim.faa,
+    Q.insect+I+G4: 107139at6656_aligned_trim.faa,
+    Q.insect+G4: 107453at6656_aligned_trim.faa,
+    Q.insect+F+G4: 109325at6656_aligned_trim.faa,
+    VT+R2: 109444at6656_aligned_trim.faa,
+    Q.insect+R3: 109484at6656_aligned_trim.faa,
+    Q.insect+I+G4: 110129at6656_aligned_trim.faa,
+    Q.yeast+G4: 113604at6656_aligned_trim.faa,
+    VT+R3: 113865at6656_aligned_trim.faa,
+    Blosum62+G4: 114463at6656_aligned_trim.faa,
+    Q.plant+I+G4: 114609at6656_aligned_trim.faa,
+    mtZOA+G4: 115256at6656_aligned_trim.faa,
+    Q.plant+I+G4: 116401at6656_aligned_trim.faa,
+    Q.insect+G4: 117335at6656_aligned_trim.faa,
+    Q.insect+G4: 117413at6656_aligned_trim.faa,
+    Q.plant+G4: 117811at6656_aligned_trim.faa,
+    Q.insect+G4: 118496at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 118527at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 119144at6656_aligned_trim.faa,
+    Q.insect+G4: 119951at6656_aligned_trim.faa,
+    Q.insect+G4: 123672at6656_aligned_trim.faa,
+    Q.insect+G4: 123790at6656_aligned_trim.faa,
+    Q.plant+G4: 124174at6656_aligned_trim.faa,
+    Q.insect+G4: 124400at6656_aligned_trim.faa,
+    Q.insect+G4: 125210at6656_aligned_trim.faa,
+    Q.insect+I+I+R2: 125446at6656_aligned_trim.faa,
+    Q.insect+G4: 127998at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 128216at6656_aligned_trim.faa,
+    Q.insect+I+G4: 128916at6656_aligned_trim.faa,
+    Q.yeast+G4: 129200at6656_aligned_trim.faa,
+    Q.insect+G4: 129593at6656_aligned_trim.faa,
+    Q.insect+I+G4: 129886at6656_aligned_trim.faa,
+    LG+I+I+R3: 130663at6656_aligned_trim.faa,
+    Q.insect+G4: 131751at6656_aligned_trim.faa,
+    LG+G4: 132329at6656_aligned_trim.faa,
+    LG+G4: 132340at6656_aligned_trim.faa,
+    Q.insect+G4: 133362at6656_aligned_trim.faa,
+    Q.yeast+F+G4: 133949at6656_aligned_trim.faa,
+    JTT+G4: 134708at6656_aligned_trim.faa,
+    Q.insect+G4: 134853at6656_aligned_trim.faa,
+    Q.insect+G4: 135075at6656_aligned_trim.faa,
+    Q.insect+G4: 135107at6656_aligned_trim.faa,
+    Q.yeast+G4: 135391at6656_aligned_trim.faa,
+    Q.insect+G4: 135859at6656_aligned_trim.faa,
+    Q.plant+G4: 136055at6656_aligned_trim.faa,
+    LG+G4: 137334at6656_aligned_trim.faa,
+    Q.insect+G4: 138271at6656_aligned_trim.faa,
+    Q.insect+G4: 138401at6656_aligned_trim.faa,
+    Q.yeast+I+I+R3: 138553at6656_aligned_trim.faa,
+    LG+R3: 138684at6656_aligned_trim.faa,
+    Q.insect+G4: 139638at6656_aligned_trim.faa,
+    Q.yeast+G4: 139744at6656_aligned_trim.faa,
+    Q.yeast+I+G4: 140693at6656_aligned_trim.faa,
+    Q.insect+G4: 140874at6656_aligned_trim.faa,
+    Q.plant+I+G4: 140903at6656_aligned_trim.faa,
+    Q.insect+I+G4: 142415at6656_aligned_trim.faa,
+    mtZOA+R4: 142522at6656_aligned_trim.faa,
+    mtZOA+G4: 142613at6656_aligned_trim.faa,
+    LG+G4: 143279at6656_aligned_trim.faa,
+    Q.insect+G4: 143489at6656_aligned_trim.faa,
+    Q.insect+I+G4: 144836at6656_aligned_trim.faa,
+    mtZOA+I+G4: 144851at6656_aligned_trim.faa,
+    Q.insect+I+I+R2: 145102at6656_aligned_trim.faa,
+    Q.insect+G4: 145610at6656_aligned_trim.faa,
+    Q.insect+G4: 145996at6656_aligned_trim.faa,
+    LG+G4: 146103at6656_aligned_trim.faa,
+    Q.insect+G4: 146383at6656_aligned_trim.faa,
+    Q.insect+G4: 147723at6656_aligned_trim.faa,
+    Q.pfam+I+G4: 148619at6656_aligned_trim.faa,
+    LG+G4: 148890at6656_aligned_trim.faa,
+    Q.insect+R3: 149126at6656_aligned_trim.faa,
+    JTTDCMut+R3: 149405at6656_aligned_trim.faa,
+    Q.insect+G4: 149819at6656_aligned_trim.faa,
+    Q.insect+G4: 150049at6656_aligned_trim.faa,
+    Q.insect+G4: 150327at6656_aligned_trim.faa,
+    Q.insect+G4: 150585at6656_aligned_trim.faa,
+    Q.insect+I+G4: 150765at6656_aligned_trim.faa,
+    Q.insect+G4: 151436at6656_aligned_trim.faa,
+    Q.insect+G4: 152032at6656_aligned_trim.faa,
+    Q.yeast+G4: 153312at6656_aligned_trim.faa,
+    Q.pfam+R2: 154415at6656_aligned_trim.faa,
+    Q.insect+I+G4: 155285at6656_aligned_trim.faa,
+    Q.insect+G4: 156081at6656_aligned_trim.faa,
+    Q.pfam+G4: 156111at6656_aligned_trim.faa,
+    Q.insect+R2: 157486at6656_aligned_trim.faa,
+    Q.insect+G4: 157851at6656_aligned_trim.faa,
+    Q.insect+G4: 159542at6656_aligned_trim.faa,
+    LG+I+G4: 161435at6656_aligned_trim.faa,
+    Q.yeast+I+G4: 162147at6656_aligned_trim.faa,
+    Q.insect+I+G4: 162594at6656_aligned_trim.faa,
+    Q.insect+G4: 164354at6656_aligned_trim.faa,
+    Q.insect+R3: 165493at6656_aligned_trim.faa,
+    Q.insect+R4: 22887at6656_aligned_trim.faa,
+    LG+I+I+R3: 25554at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 26653at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 30642at6656_aligned_trim.faa,
+    LG+I+G4: 59393at6656_aligned_trim.faa,
+    Blosum62+R3: 59681at6656_aligned_trim.faa,
+    VT+F+R4: 60067at6656_aligned_trim.faa,
+    JTTDCMut+I+I+R2: 60299at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 61153at6656_aligned_trim.faa,
+    Q.insect+I+G4: 65508at6656_aligned_trim.faa,
+    Q.insect+R2: 66299at6656_aligned_trim.faa,
+    Q.insect+G4: 69284at6656_aligned_trim.faa,
+    Q.insect+G4: 69742at6656_aligned_trim.faa,
+    Q.insect+G4: 73084at6656_aligned_trim.faa,
+    Q.insect+R3: 73301at6656_aligned_trim.faa,
+    Q.insect+I+G4: 74836at6656_aligned_trim.faa,
+    Q.insect+G4: 75982at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 77976at6656_aligned_trim.faa,
+    Q.insect+G4: 81650at6656_aligned_trim.faa,
+    Q.insect+G4: 83303at6656_aligned_trim.faa,
+    LG+G4: 84097at6656_aligned_trim.faa,
+    Q.insect+I+I+R2: 84169at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 84422at6656_aligned_trim.faa,
+    Q.insect+G4: 87014at6656_aligned_trim.faa,
+    Q.insect+G4: 87527at6656_aligned_trim.faa,
+    Q.insect+R3: 87728at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 89810at6656_aligned_trim.faa,
+    Q.yeast+G4: 90931at6656_aligned_trim.faa,
+    Q.insect+I+G4: 91002at6656_aligned_trim.faa,
+    Q.insect+I+I+R2: 91418at6656_aligned_trim.faa,
+    Q.insect+I+I+R3: 93085at6656_aligned_trim.faa,
+    Q.insect+G4: 93432at6656_aligned_trim.faa,
+    Q.plant+I+G4: 94263at6656_aligned_trim.faa,
+    JTTDCMut+I+G4: 94304at6656_aligned_trim.faa,
+    Q.insect+I+G4: 94878at6656_aligned_trim.faa,
+    Q.plant+G4: 96569at6656_aligned_trim.faa,
+    Q.insect+G4: 96592at6656_aligned_trim.faa;
+end;
