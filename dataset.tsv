@@ -1,4 +1,4 @@
-Species ID  Subclass	Superorder	Group	Order	Family	GenBank_Accession_Number	BUSCO_statistics	BUSCO_genes_for_phylogenomics	Reference
+Species  ID  Subclass	Superorder	Group	Order	Family	GenBank_Accession_Number	BUSCO_statistics	BUSCO_genes_for_phylogenomics	Reference
 Ischnura_elegans	Iele	Outgroup	Outgroup	Outgroup	Outgroup	Outgroup	GCA_921293095.1	C:98.0%[S:97.4%,D:0.6%],F:0.9%,M:1.1%	134	Price_et_al.,_2022
 Sinella_curviseta	Scur	Outgroup	Outgroup	Outgroup	Outgroup	Outgroup	GCA_004115045.3	C:96.3%[S:93.7%,D:2.6%],F:1.3%,M:2.4%	129	Zhang_et_al.,_2019
 Branchinecta_lindahli	Blin	Sarsotraca	-	-	Anostraca	Branchinectidae	GCA_023053555.1	C:90.8%[S:90.5%,D:0.3%],F:3.5%,M:5.7%	131	Kieran_Blair_et_al.,_2023a
