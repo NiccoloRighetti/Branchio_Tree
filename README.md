@@ -6,7 +6,7 @@ In this repository you will find data and codes used to perform the phylogenomic
 > **Abstract.** bla bla bla.
 
 <p align="center">
-<img src="./figures/figure_1.png">
+<img src="./figures/figure_1/figure_1_FINAL.png">
 </p>
 
 ## Phylogenomic analysis
@@ -89,3 +89,21 @@ The time-tree was calibrated after the previously-obtained phylogenetic tree usi
 </details>
 
 Input files, scripts, results for each MCMCtree run, and the final time-calibrated phylogenetic tree can be found in [<code>02_mcmctree_dating/</code>](./02_mcmctree_dating/).
+
+## Sensitivity analyses
+To test for the impact of our priors, we conducted several sensitivity analyses.
+
+First and foremost, we evaluated the impact of fossil age priors by performing new phylogenetic datings, after having alternatively removed each calibration point. Note that node codes are the same as in **[Figure 1](./figures/figure_1/figure_1_FINAL.png)** and **[Table 1](./age_priors.tsv)**.
+
+Then, we evaluated the impact of a problematic taxon, that is, *Lynceus sp.* (Laevicaudata), which is notoriously known to return conflicting topologies. Thus, we dated a phylogenetic tree missing the aformentioned tip. 
+
+Eventually, we evaluated the impact of using either genes which tree topology is concordant with the species tree, or gene which tree topology is discordant. To this purpose, we dated two phylogenetic trees which branch lengths have been adjusted only on concordant or discordant genes, respectively.
+
+Input files, scripts, results for each MCMCtree run, and final time-calibrated phylogenetic trees can be found in [<code>03_fossil_jackknife/</code>](./03_fossil_jackknife/), [<code>04_no_lynceus/</code>](./04_no_lynceus/), [<code>05_concordant_genes/</code>](./05_concordant_genes/), and [<code>06_discordant_genes/</code>](./06_discordant_genes/).
+
+## Plots and figures
+Figures has been mostly created with R, with just few additional manual post-edits. The corresponding codes and necessary input files can be found in [<code>figures/</code>](./figures/).
+
+To generate **[Figure 1B](./figures/figure_1/figure_1_FINAL.png)**, fossil occurrence data are necessary as input files (<code>./figures/figure_1/*csv</code>). They have been obtained from [The Paleobiology Database](https://paleobiodb.org/#/) on May 2024.
+
+To generate **[Figure 2](./figures/figure_2/figure_2.png)**, date estimate data from previos works are necessary as an input file 
