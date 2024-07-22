@@ -3,7 +3,7 @@
 In this repository you will find data and codes used to perform the phylogenomic and time-tree calibration analyses for the research paper:
 > [Righetti N](https://github.com/NiccoloRighetti), [Nicolini F](https://github.com/filonico), [Forni G](https://github.com/for-giobbe), [Luchetti A](https://github.com/andluche). A temporal framework for the origin and diversification of Branchiopoda.
 >
-> **Abstract.** bla bla bla.
+> **Abstract.** An understanding of Branchiopoda’s evolutionary history is crucial for a comprehensive knowledge of the Pancrustacea tree of life, given their close evolutionary relationship with Hexapoda. Despite significant advances in molecular and morphological phylogenetics that have resolved much of the branchiopod backbone topology, a reliable temporal framework remains elusive. Key challenges include a sparse fossil record, long-term morphological stasis, and past topological inconsistencies. Leveraging a Bayesian inference approach and the most extensive phylogenomic dataset for branchiopod to date, encompassing 46 species and over 150 genes, we inferred a time-calibrated phylogenetic tree. Furthermore, to strengthen the confidence in our divergence times estimation, we assessed the impact of age priors, topological uncertainties, and gene trees which are discordant from the species trees. Our results are largely consistent with the fossil record and with previous studies, indicating that Branchiopoda originated between 400 and 500 million years ago. Subsequently, the majority of orders diversified during the Mesozoic. However, the Cladocera clade remains problematic, with unresolved relationships and uncertain timing of diversification.
 
 <p align="center">
 <img src="./figures/figure1/figure_1_FINAL.png">
