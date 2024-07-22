@@ -6,7 +6,7 @@ In this repository you will find data and codes used to perform the phylogenomic
 > **Abstract.** bla bla bla.
 
 <p align="center">
-<img src="./figures/figure_1/figure_1_FINAL.png">
+<img src="./figures/figure1/figure_1_FINAL.png">
 </p>
 
 ## Phylogenomic analysis
@@ -106,4 +106,25 @@ Figures has been mostly created with R, with just few additional manual post-edi
 
 To generate **[Figure 1B](./figures/figure_1/figure_1_FINAL.png)**, fossil occurrence data are necessary as input files (<code>./figures/figure_1/*csv</code>). They have been obtained from [The Paleobiology Database](https://paleobiodb.org/#/) on May 2024.
 
-To generate **[Figure 2](./figures/figure_2/figure_2.png)**, date estimate data from previos works are necessary as an input file 
+To generate **[Figure 2](./figures/figure_2/figure_2.png)**, date estimations from previos works are necessary as an input file. It can be found in **Supplementary Table S2**, in [<code>figures/figure_2/dates.txt</code>](.figures/figure_2/dates.txt), and below.
+
+<details>
+
+<summary><ins>Supplementary Table S2: <b>age estimates from different works</b></ins></summary>
+
+| Clade            | Date (this works) | 95% CI (this works) | Date (Sun et al., 2016) | 95% CI (Sun et al., 2016) | Date (Uozomi et al., 2021) | 95% CI (Uozomi et al., 2021) | Date (Bernot et al., 2023) | 95% CI (Bernot et al., 2023) |
+| ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ----------------- | ------------------- | ----------------------- | ------------------------- |
+| Branchiopoda (1) | 435.0             | 345.7 – 524.1       | 495.0                   | 478.0 – 512.0             | 534.5 | N/A | 450.0 | 401.4 – 503.9 |
+| Anostraca (2)    | 171.0            | 119.4 – 241.3       | 310.0                   | 218.0 – 402.0             | 142.1 | N/A | N/A | N/A |
+| Phyllopoda       | 360.0             | 289.7 – 444.2       | 465.0                   | 448.0 – 480.0             | 496.0 | N/A | 370.0 | 277.7 – 447.8 |
+| Notostraca (3)   | 129.0             | 58.8 – 143.3        | N/A                     | N/A                       | 51.7 | N/A | N/A | N/A |
+| Diplostraca      | 310.0             | 250.0 – 384.4       | 450.0                   | 430.0 – 460.0             | 419.1 | N/A | N/A | N/A |
+| Onychocaudata    | 290.0             | 246.3 – 327.0       | 465.5                   | 416 – 515                 | 376.2 | N/A | 240.0 | 147.3 – 344.3 |
+| Spinicaudata     | 141.0             | 113.3 – 201.5       | N/A                     | N/A                       | 170.6 | N/A | N/A | N/A |
+| Cladoceromorpha  | 249.0             | 209.5 – 289.7       | N/A                     | N/A                       | 305.9 | N/A | N/A | N/A |
+| Cyclestherida    | 58.0              | 27.1 – 105.1        | N/A                     | N/A                       | N/A | N/A | N/A | N/A |
+| Cladocera (4)    | 224.0             | 186.4 – 263.1       | N/A                     | N/A                       | 261.5 | N/A | N/A | N/A |
+| Anomopoda        | 176.0             | 145.0 – 211.9       | N/A                     | N/A                       | 199.1 | N/A | N/A | N/A |
+| Onycopoda        | 137.0             | 95.6 – 190.2        | N/A                     | N/A                       | N/A | N/A | N/A | N/A |
+
+</details>
