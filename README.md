@@ -95,7 +95,7 @@ Input files, scripts, results for each MCMCtree run, and the final time-calibrat
 ## Sensitivity analyses
 To test for the impact of our priors, we conducted several sensitivity analyses.
 
-First and foremost, we evaluated the impact of fossil age priors by performing new phylogenetic datings, after having alternatively removed each calibration point. Note that node codes are the same as in **[Figure 1](./figures/figure_1/figure_1_FINAL.png)** and **[Table 1](./age_priors.tsv)**.
+First and foremost, we evaluated the impact of fossil age priors by performing new phylogenetic datings, after having alternatively removed each calibration point. Note that node codes are the same as in **[Figure 1](./figures/figure1/figure_1_FINAL.png)** and **[Table 1](./age_priors.tsv)**.
 
 Then, we evaluated the impact of a problematic taxon, that is, *Lynceus sp.* (Laevicaudata), which is notoriously known to return conflicting topologies. Thus, we dated a phylogenetic tree missing the aformentioned tip. 
 
@@ -106,7 +106,7 @@ Input files, scripts, results for each MCMCtree run, and final time-calibrated p
 ## Plots and figures
 Figures has been mostly created with R, with just few additional manual post-edits. The corresponding codes and necessary input files can be found in [<code>figures/</code>](./figures/).
 
-To generate **[Figure 1B](./figures/figure_1/figure_1_FINAL.png)**, fossil occurrence data are necessary as input files (<code>./figures/figure_1/*csv</code>). They have been obtained from [The Paleobiology Database](https://paleobiodb.org/#/) on May 2024.
+To generate **[Figure 1](./figures/figure_1/figure_1_FINAL.png)**, fossil occurrence data are necessary as input files (<code>./figures/figure_1/*csv</code>). They have been obtained from [The Paleobiology Database](https://paleobiodb.org/#/) on May 2024.
 
 To generate **[Figure 2](./figures/figure_2/figure_2.png)**, date estimations from previos works are necessary as an input file. It can be found in **Supplementary Table S2**, in [<code>figures/figure_2/dates.txt</code>](.figures/figure_2/dates.txt), and below.
 
