@@ -128,3 +128,5 @@ To generate **[Figure 2](./figures/figure_2/figure_2.png)**, date estimations fr
 | Onycopoda        | 137.0             | 95.6 – 190.2        | N/A                     | N/A                       | N/A | N/A | N/A | N/A |
 
 </details>
+
+To generate **[Figure 3](./figures/figure3_SuppFig1/figure_3.png)** and **[Supplementary Figure S1](./figures/figure3_SuppFig1/supp_figure_S1.png)**, no input files are necessary.
