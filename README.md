@@ -69,8 +69,10 @@ We obtained a ML phylogenetic tree of branchiopods with IQ-TREE, using both geno
 
 </details>
 
+Input fasta files, best-models as returned by Model Finder, and the resulting tree can be found in [<code>01_phylogenomics/</code>](./01_phylogenomics/).
+
 ## Time-tree calibration
-The time-tree was calibrated after the previously-obtained phylogenetic tree using MCMCtree. Age priors are defined as in **Table 1**, in age_priors.tsv, and below.
+The time-tree was calibrated after the previously-obtained phylogenetic tree using MCMCtree. Age priors are defined as in **Table 1**, in [<code>age_priors.tsv</code>](./age_priors.tsv), and below.
 
 <details>
 
@@ -85,3 +87,5 @@ The time-tree was calibrated after the previously-obtained phylogenetic tree usi
 | Cladocera crown group                    | 4         | *Smirnovidaphnia smirnovi*       | 173.10        | 521.00 (soft) | Wolfe et al., 2016 |
 
 </details>
+
+Input files, scripts, results for each MCMCtree run, and the final time-calibrated phylogenetic tree can be found in [<code>02_mcmctree_dating/</code>](./02_mcmctree_dating/).
