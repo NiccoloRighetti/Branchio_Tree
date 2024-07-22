@@ -5,8 +5,12 @@ In this repository you will find data and codes used to perform the phylogenomic
 >
 > **Abstract.** bla bla bla.
 
+<p align="center">
+<img src="./figures/figure_1.png">
+</p>
+
 ## Phylogenomic analysis
-We obtained a ML phylogenetic tree of branchiopods using both genomic and transcriptomic resources, for a total of 48 species (including two outgroups), as in **Supplementary Table S1**:
+We obtained a ML phylogenetic tree of branchiopods using both genomic and transcriptomic resources, for a total of 48 species (including two outgroups), as in **Supplementary Table S1** (a parsable version can be find in [dataset.tsv](dataset.tsv)):
 | Species                       | ID   | Subclass   | Superorder    | Group          | Order         | Family            | GenBank Accession Number                                                                               | BUSCO statistics                        | BUSCO genes for phylogenomics | Reference                  |
 | ----------------------------- | ---- | ---------- | ------------- | -------------- | ------------- | ----------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------- | ----------------------------- | -------------------------- |
 | *Ischnura elegans*              | Iele | Outgroup   | Outgroup      | Outgroup       | Outgroup      | Outgroup          | [GCA_921293095.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_921293095.1/)                       | C:98.0%[S:97.4%,D:0.6%],F:0.9%,M:1.1%   | 134                           | Price et al., 2022         |
