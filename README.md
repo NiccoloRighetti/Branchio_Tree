@@ -10,7 +10,12 @@ In this repository you will find data and codes used to perform the phylogenomic
 </p>
 
 ## Phylogenomic analysis
-We obtained a ML phylogenetic tree of branchiopods using both genomic and transcriptomic resources, for a total of 48 species (including two outgroups), as in **Supplementary Table S1** (a parsable version can be find in [dataset.tsv](./dataset.tsv)):
+We obtained a ML phylogenetic tree of branchiopods with IQ-TREE, using both genomic and transcriptomic resources for a total of 48 species (including two outgroups). Data are shown in **Supplementary Table S1**, in [<code>dataset.tsv</code>](./dataset.tsv) (parsable version) and below.
+
+<details>
+
+<summary><ins>Supplementary Table S1: <b>dataset</b></ins></summary>
+
 | Species                       | ID   | Subclass   | Superorder    | Group          | Order         | Family            | GenBank Accession Number                                                                               | BUSCO statistics                        | BUSCO genes for phylogenomics | Reference                  |
 | ----------------------------- | ---- | ---------- | ------------- | -------------- | ------------- | ----------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------- | ----------------------------- | -------------------------- |
 | *Ischnura elegans*              | Iele | Outgroup   | Outgroup      | Outgroup       | Outgroup      | Outgroup          | [GCA_921293095.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_921293095.1/)                       | C:98.0%[S:97.4%,D:0.6%],F:0.9%,M:1.1%   | 134                           | Price et al., 2022         |
@@ -61,3 +66,22 @@ We obtained a ML phylogenetic tree of branchiopods using both genomic and transc
 | *Daphnia pulex*                 | Dpul | Phyllopoda | Diplostraca   | Cladocera      | Anomopoda     | Daphniidae        | [GCA_000187875.1](https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000187875.1/)                       | C:98.1%[S:97.9%,D:0.2%],F:0.6%,M:1.3%   | 132                           | Colbourne et al., 2011     |
 | *Scapholeberis cf. mucronata*   | Smuc | Phyllopoda | Diplostraca   | Cladocera      | Anomopoda     | Daphniidae        | [SRR5140113](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR5140113)                                     | C:77.5%[S:77.4%,D:0.1%],F:14.9%,M:7.6%  | 130                           | Schwentner et al., 2018    |
 | *Simocephalus vetulus*          | Svet | Phyllopoda | Diplostraca   | Cladocera      | Anomopoda     | Daphniidae        | [SRR5140138](https://trace.ncbi.nlm.nih.gov/Traces?run=SRR5140138)                                     | C:81.4%[S:81.1%,D:0.3%],F:13.0%,M:5.6%  | 133                           | Schwentner et al., 2018    |
+
+</details>
+
+## Time-tree calibration
+The time-tree was calibrated after the previously-obtained phylogenetic tree using MCMCtree. Age priors are defined as in **Table 1**, in age_priors.tsv, and below.
+
+<details>
+
+<summary><ins>Table 1: <b>age priors</b></ins></summary>
+
+| Group                                    | Node code | Fossil                         | Min. Age (Ma) | Max. Age (Ma) | Reference          |
+| ---------------------------------------- | --------- | ------------------------------ | ------------- | ------------- | ------------------ |
+| Branchiopoda + Hexapoda (Allotriocardia) | 0         | *Rehbachiella kinnekullensis*    | 497.00        | 636.00        | Wolfe et al., 2016 |
+| Branchiopoda crown group                 | 1         | *Lepidocaris rhyniensis*         | 405.00        | 521.00 (soft) | Wolfe et al., 2016 |
+| Anostraca crown group                    | 2         | *Palaeochirocephalus rasnitsyni* | 125.71        | 521.00 (soft) | Wolfe et al., 2016 |
+| Notostraca crown group                   | 3         | *Chenops yixianensis*            | 121.80        | 521.00 (soft) | Wolfe et al., 2016 |
+| Cladocera crown group                    | 4         | *Smirnovidaphnia smirnovi*       | 173.10        | 521.00 (soft) | Wolfe et al., 2016 |
+
+</details>
