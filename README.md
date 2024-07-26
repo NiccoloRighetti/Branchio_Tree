@@ -108,7 +108,7 @@ Figures has been mostly created with R, with just few additional manual post-edi
 
 To generate **[Figure 1](./figures/figure_1/figure_1_FINAL.png)**, fossil occurrence data are necessary as input files (<code>./figures/figure_1/*csv</code>). They have been obtained from [The Paleobiology Database](https://paleobiodb.org/#/) on May 2024.
 
-To generate **[Figure 2](./figures/figure2/figure_2.png)**, date estimations from previos works are necessary as an input file. It can be found in **Supplementary Table S2**, in [<code>figures/figure_2/dates.txt</code>](.figures/figure_2/dates.txt), and below.
+To generate **[Figure 2](./figures/figure2/figure_2.png)**, date estimations from previos works are necessary as an input file. It can be found in **Supplementary Table S2**, in [<code>figures/figure2/dates.txt</code>](.figures/figure2/dates.txt), and below.
 
 <details>
 
