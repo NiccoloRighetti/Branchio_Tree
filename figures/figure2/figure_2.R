@@ -1,7 +1,8 @@
 library(tidyr)
+library(dplyr)
 library(ggplot2)
 
-data <- read.table("dates.txt", sep = "\t", header = TRUE)
+data <- read.table("dates.tsv", sep = "\t", header = TRUE)
 data
 
 tibble_to_plot <- data %>%
@@ -12,10 +13,14 @@ tibble_to_plot <- data %>%
                values_to = "value") %>%
   
   pivot_wider(names_from = metric,
-              values_from = value)
+              values_from = value) %>%
+  
+  mutate(clade = stringr::str_replace(clade, "_", " "))
 
 tibble_to_plot$clade <- factor(tibble_to_plot$clade, levels = unique(c("Branchiopoda (1)", "Anostraca (2)", "Phyllopoda", "Notostraca (3)", "Diplostraca", "Onychocaudata", "Spinicaudata", "Cladoceromorpha", "Cyclestherida", "Cladocera (4)", "Anomopoda", "Onycopoda")))
-tibble_to_plot$study <- factor(tibble_to_plot$study, levels = unique(c("sun2016", "uozomi2021", "bernot2023", "thisWork")))
+tibble_to_plot$study <- factor(tibble_to_plot$study, levels = unique(c("sun2016", "uozomi2021", "vanDamme2022", "bernot2023", "thisWork")))
+
+tibble_to_plot
 
 plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
   
@@ -30,8 +35,8 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
                 position = position_dodge(width = 0.5)) +
   
   scale_color_manual("Study",
-                     labels = c("Sun et al., 2016\n(r8s)", "Uozomi et al., 2021\n(MEGA X)", "Bernot et al., 2023\n(MCMCtree)", "This work\n(MCMCtree)"),
-                     values = c("#a7d7b1", "#9dceda", "#f7d57f", "#f2999d")) +
+                     labels = c("Sun et al., 2016\n(r8s)", "Uozomi et al., 2021\n(MEGA X)", "Van Damme et al., 2022\n(BEAST)", "Bernot et al., 2023\n(MCMCtree)", "This work\n(MCMCtree)"),
+                     values = c("#c08fe1", "#9dceda", "#a7d7b1", "#f7d57f", "#f2999d")) +
   
   
   ggnewscale::new_scale_color() +
@@ -43,8 +48,8 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
                  tibble_to_plot$date[tibble_to_plot$clade == "Notostraca (3)" & tibble_to_plot$study == "uozomi2021"])) +
   
   scale_color_manual("Study",
-                     labels = c("Sun et al., 2016\n(r8s)", "Uozomi et al., 2021\n(MEGA X)", "Bernot et al., 2023\n(MCMCtree)", "This work\n(MCMCtree)"),
-                     values = c("#0cda53", "#00c7eb", "#ffa700", "#f41d27")) +
+                     labels = c("Sun et al., 2016\n(r8s)", "Uozomi et al., 2021\n(MEGA X)", "Van Damme et al., 2022\n(BEAST)", "Bernot et al., 2023\n(MCMCtree)", "This work\n(MCMCtree)"),
+                     values = c("#ae4dee", "#00c7eb", "#0cda53", "#ffa700", "#f41d27")) +
   
   scale_x_discrete(expand = c(0, 0)) +
   
