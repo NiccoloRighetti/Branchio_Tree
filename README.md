@@ -132,3 +132,7 @@ To generate **[Figure 2](./figures/figure2/figure_2.png)**, date estimations fro
 </details>
 
 To generate **[Figure 3](./figures/figure3_SuppFig1/figure_3.png)** and **[Supplementary Figure S1](./figures/figure3_SuppFig1/supp_figure_S1.png)**, no input files are necessary.
+
+To generate **[Supplementary Figure S2](./figures/SuppFig2/supp_figure_S2.png)**, likelihood values from each MCMCtree runs are necessary. They can be found in [<code>figures/SuppFig2/joined_mcmc_lnL.tsv</code>](./figures/SuppFig2/joined_mcmc_lnL.tsv).
+
+To generate **[Supplementary Figure S3](./figures/SuppFig3/supp_figure_S3.png)**, no input files are necessary.
