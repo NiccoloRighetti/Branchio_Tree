@@ -6,7 +6,7 @@ In this repository you will find data and codes used to perform the phylogenomic
 > **Abstract.** An understanding of Branchiopoda’s evolutionary history is crucial for a comprehensive knowledge of the Pancrustacea tree of life, given their close evolutionary relationship with Hexapoda. Despite significant advances in molecular and morphological phylogenetics that have resolved much of the branchiopod backbone topology, a reliable temporal framework remains elusive. Key challenges include a sparse fossil record, long-term morphological stasis, and past topological inconsistencies. Leveraging a Bayesian inference approach and the most extensive phylogenomic dataset for branchiopod to date, encompassing 46 species and over 150 genes, we inferred a time-calibrated phylogenetic tree. Furthermore, to strengthen the confidence in our divergence times estimation, we assessed the impact of age priors, topological uncertainties, and gene trees which are discordant from the species trees. Our results are largely consistent with the fossil record and with previous studies, indicating that Branchiopoda originated between 400 and 500 million years ago. Subsequently, the majority of orders diversified during the Mesozoic. However, the Cladocera clade remains problematic, with unresolved relationships and uncertain timing of diversification.
 
 <p align="center">
-<img src="./figures/figure1/figure_1_FINAL.png">
+<img src="./figures/figure1/figure_1.png">
 </p>
 
 Feel free to visit our **[EVO·COM](https://sites.google.com/view/evo-com-unibo/home)** group website!
@@ -95,7 +95,7 @@ Input files, scripts, results for each MCMCtree run, and the final time-calibrat
 ## Sensitivity analyses
 To test for the impact of our priors, we conducted several sensitivity analyses.
 
-First and foremost, we evaluated the impact of fossil age priors by performing new phylogenetic datings, after having alternatively removed each calibration point. Note that node codes are the same as in **[Figure 1](./figures/figure1/figure_1_FINAL.png)** and **[Table 1](./age_priors.tsv)**.
+First and foremost, we evaluated the impact of fossil age priors by performing new phylogenetic datings, after having alternatively removed each calibration point. Note that node codes are the same as in **[Figure 1](./figures/figure1/figure_1.png)** and **[Table 1](./age_priors.tsv)**.
 
 Then, we evaluated the impact of a problematic taxon, that is, *Lynceus sp.* (Laevicaudata), which is notoriously known to return conflicting topologies. Thus, we dated a phylogenetic tree missing the aformentioned tip. 
 
