@@ -31,7 +31,7 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
            ymax = +Inf) +
   
   geom_errorbar(aes(x = clade, ymin = lowerCI, ymax = upperCI, col = study),
-                width = 0.5, linewidth = 0.5, lineend = "round",
+                width = 0.4, linewidth = 0.4, lineend = "round",
                 position = position_dodge(width = 0.5)) +
   
   scale_color_manual("Study",
@@ -40,9 +40,9 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
   
   
   ggnewscale::new_scale_color() +
-  geom_point(aes(col = study), size = 1.8, position = position_dodge(width = 0.5)) +
+  geom_point(aes(col = study), size = 1.5, position = position_dodge(width = 0.5)) +
   
-  annotate("text", label = c("a", "b"), hjust = -0.2, size = 3, col = "#3d3d3d",
+  annotate("text", label = c("a", "b"), hjust = 0.1, size = 3, col = c("#ae4dee", "#00c7eb"),
            x = c(2, 4),
            y = c(tibble_to_plot$date[tibble_to_plot$clade == "Anostraca (2)" & tibble_to_plot$study == "sun2016"],
                  tibble_to_plot$date[tibble_to_plot$clade == "Notostraca (3)" & tibble_to_plot$study == "uozomi2021"])) +
@@ -76,6 +76,6 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
 
 plot
 
-ggsave("plot_dates_comparisons.pdf",
-       plot = plot, device = "pdf",
-       dpi = 300, height = 4, width = 7, units = ("in"), bg = 'transparent')
+ggsave("figure_2.png",
+       plot = plot, device = "png",
+       dpi = 300, height = 4, width = 7, units = ("in"), bg = 'white')
