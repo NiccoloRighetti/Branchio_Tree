@@ -18,7 +18,7 @@
 
        BDparas = 1 1 0.1    * birth, death, sampling
 
-   rgene_gamma = 2 10.99   * gammaDir prior for rate for genes
+   rgene_gamma = 2 9.83   * gammaDir prior for rate for genes
   sigma2_gamma = 1 10  * gammaDir prior for sigma^2     (for clock=2 or 3)
 
          print = 1       * 0: no mcmc sample; 1: everything except branch rates 2: everything
