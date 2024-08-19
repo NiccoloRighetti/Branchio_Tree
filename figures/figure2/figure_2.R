@@ -52,6 +52,7 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
                      values = c("#ae4dee", "#2069e7","#00c7eb", "#0cda53", "#ffa700", "#f41d27")) +
   
   scale_x_discrete(expand = c(0, 0)) +
+  scale_y_continuous(breaks = c(0, 23, 66, 140, 200, 250, 300, 360, 420, 440, 490, 540, 590)) +
   
   xlab("Clade") +
   ylab("Years (Ma)") +
