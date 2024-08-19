@@ -68,6 +68,7 @@ plot <- ggplot(tibble_to_plot, aes(x = clade, y = date)) +
         axis.text.x = element_text(angle = 45, hjust = 1, size = 7),
         axis.text.y = element_text(size = 7),
         axis.title = element_text(size = 7, face = "bold"),
+        axis.ticks.y = element_line(),
         legend.position = "right",
         legend.background = element_rect(fill = 'transparent', color = NA),
         legend.key.size = unit(0.3, "cm"),
