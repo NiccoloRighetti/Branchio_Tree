@@ -16,20 +16,22 @@ tibble_to_plot <- data %>%
 
 tibble_to_plot
 
-labeller <- c("concordantGenes" = "G) Concordant genes",
-              "discordantGenes" = "H) Discordant genes",
+labeller <- c("concordantGenes" = "J) Concordant genes",
+              "discordantGenes" = "K) Discordant genes",
               "jackknifeNo1" = "B) Jackknife No1",
               "jackknifeNo2" = "C) Jackknife No2",
               "jackknifeNo3" = "D) Jackknife No3",
               "jackknifeNo4" = "E) Jackknife No4",
+              "jackknifeNo14" = "F) Jackknife No1+4",
+              "jackknifeNo24" = "G) Jackknife No2+4",
+              "jackknifeNo34" = "H) Jackknife No3+4",
               "mcmctreeTotal" = "A) MCMCtree total",
-              "noLynceus" = "F) No Lynceus")
+              "noLynceus" = "I) No Lynceus")
 
 tibble_to_plot$analysis <- factor(tibble_to_plot$analysis,
                                   levels = unique(c("mcmctreeTotal",
-                                                    "jackknifeNo1", "jackknifeNo2", "jackknifeNo3", "jackknifeNo4",
+                                                    "jackknifeNo1", "jackknifeNo2", "jackknifeNo3", "jackknifeNo4", "jackknifeNo14", "jackknifeNo24", "jackknifeNo34",
                                                     "noLynceus", "concordantGenes", "discordantGenes")))
-
 
 plot <- ggplot(tibble_to_plot, aes(x = lnL, col = run)) +
   geom_line(linewidth = 0.6, alpha = 0.5, stat = "density") +
@@ -52,4 +54,4 @@ plot
 
 ggsave("supp_figure_S1.png",
        plot = plot, device = "png",
-       dpi = 300, height = 12, width = 8, units = ("in"), bg = 'white')
+       dpi = 300, height = 12, width = 10, units = ("in"), bg = 'white')
