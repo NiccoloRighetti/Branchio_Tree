@@ -146,6 +146,6 @@ ggsave("figure_2.png",
        dpi = 300, height = 4, width = 7, units = ("in"), bg = 'white')
 
 ggsave("figure_2_inverted.png",
-       plot = plot_inverted, device = "png",
-       dpi = 300, height = 4, width = 7, units = ("in"), bg = 'white')
+       plot = plot_inverted, device = "pdf",
+       dpi = 300, height = 4, width = 7, units = ("in"), bg = 'transparent')
 
