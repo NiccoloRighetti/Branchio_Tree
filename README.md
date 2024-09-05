@@ -1,4 +1,4 @@
-# A temporal framework for the origin and diversification of Branchiopoda — Data and code
+# Towards a time-tree solution for Branchiopoda diversification: a jackknife assessment of fossil age priors — Data and code
 
 In this repository you will find data and codes used to perform the phylogenomic and time-tree calibration analyses for the research paper:
 > [Righetti N](https://github.com/NiccoloRighetti), [Nicolini F](https://github.com/filonico), [Forni G](https://github.com/for-giobbe), [Luchetti A](https://github.com/andluche). A temporal framework for the origin and diversification of Branchiopoda.
