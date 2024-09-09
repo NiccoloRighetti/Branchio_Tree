@@ -83,10 +83,10 @@ The time-tree was calibrated after the previously-obtained phylogenetic tree usi
 | Group                                    | Node code | Fossil                         | Min. Age (Ma) | Max. Age (Ma) | Reference          |
 | ---------------------------------------- | --------- | ------------------------------ | ------------- | ------------- | ------------------ |
 | Branchiopoda + Hexapoda (Allotriocardia) | 0         | *Rehbachiella kinnekullensis*    | 497.00        | 636.00        | Wolfe et al., 2016 |
-| Branchiopoda crown group                 | 1         | *Lepidocaris rhyniensis*         | 405.00        | 521.00 (soft) | Wolfe et al., 2016 |
-| Anostraca crown group                    | 2         | *Palaeochirocephalus rasnitsyni* | 125.71        | 521.00 (soft) | Wolfe et al., 2016 |
-| Notostraca crown group                   | 3         | *Chenops yixianensis*            | 121.80        | 521.00 (soft) | Wolfe et al., 2016 |
-| Cladocera crown group                    | 4         | *Smirnovidaphnia smirnovi*       | 173.10        | 521.00 (soft) | Wolfe et al., 2016 |
+| Branchiopoda crown group                 | 1         | *Lepidocaris rhyniensis*         | 405.00        | 521.00 | Wolfe et al., 2016 |
+| Anostraca crown group                    | 2         | *Palaeochirocephalus rasnitsyni* | 125.71        | 521.00 | Wolfe et al., 2016 |
+| Notostraca crown group                   | 3         | *Chenops yixianensis*            | 121.80        | 521.00 | Wolfe et al., 2016 |
+| Cladocera crown group                    | 4         | *Smirnovidaphnia smirnovi*       | 173.10        | 521.00 | Wolfe et al., 2016 |
 
 </details>
 
